@@ -2,6 +2,18 @@
 #FONTS
 \*------------------------------------*/
 
+@font-face {
+    font-family: "Inter Web";
+    font-weight: 100;
+    src: url("../fonts/Inter-Regular.woff2") format("Woff2");
+}
+
+@font-face {
+    font-family: "Inter Web";
+    font-weight: 200;
+    src: url("../fonts/Inter-SemiBold.woff2") format("Woff2");
+}
+
 /*------------------------------------*\
 #Variables
 \*------------------------------------*/
@@ -25,12 +37,12 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: Helvetica, arial, sans-serif;
-    color: grey;
+    font-family: "Inter Web" ,Helvetica, arial, sans-serif;
+    color: #20223a;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: white;
+    background-color: #F5F6FA;
 }
 
 *,
@@ -47,13 +59,13 @@ html {
 */
 
 ::-moz-selection {
-    background: HotPink;
+    background: #3385FF;
     color: white;
     text-shadow: none;
 }
 
 ::selection {
-    background: HotPink;
+    background: #3385FF;
     color: white;
     text-shadow: none;
 }
@@ -158,18 +170,18 @@ hr {
 }
 
 a {
-    color: HotPink;
+    color: #3385FF;
     transition: all .1s ease-in-out;
 }
 
 a:visited,
 a:active {
-    color: HotPink;
+    color: #3385FF;
 }
 
 a:hover,
 a:focus {
-    color: DeepPink;
+    color: #4F95FF;
 }
 
 /*------------------------------------*\
@@ -431,6 +443,29 @@ a:focus {
     ---
     Website main logo
 */
+
+.c-logo {
+    height: 24px;
+}
+
+.c-logo__symbol {
+    display: flexbox;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-logo__path--1 {
+    fill: #20223A;
+}
+
+.c-logo__path--2 {
+    fill: #3385FF;
+}
+
+.c-logo__path--3 {
+    fill: #1B4186;
+}
 
 /*
     Component: Card
