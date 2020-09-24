@@ -543,6 +543,10 @@ a:focus {
 */
 
 .c-button {
+  display: flex;
+  color: #3385ff;
+  border-color: #3385ff;
+  border-radius: 3px;
 }
 
 .c-button:hover {
