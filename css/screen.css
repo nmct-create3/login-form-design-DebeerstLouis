@@ -472,8 +472,37 @@ a:focus {
     Card with box shadow
 */
 
+.c-card {
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 1px #caccd4;
+}
+
+.c-card__body {
+  padding-left: 47px;
+  padding-top: 12px;
+  padding-right: 49px;
+  padding-bottom: 28px;
+}
 .c-card__title {
   display: block;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 48px;
+}
+
+.c-card__footer {
+  border-top: solid #E2E3E7;
+  padding-bottom: 1px;
+  padding-top: 14px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.c-card__forgot_password {
+  display: block;
+  text-align: center;
 }
 
 .c-form-field label {
@@ -529,8 +558,16 @@ a:focus {
 */
 
 .c-label {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 8px;
+  color: #606274;
 }
 
+.c-label__checkbox {
+  margin-left: 8px;
+  margin-bottom: 0px;
+}
 /* If a input is focused within the form-field class change te color of the label */
 
 .c-form-field:focus-within .c-label {
@@ -543,19 +580,31 @@ a:focus {
 */
 
 .c-button {
-  display: flex;
-  color: #3385ff;
-  border-color: #3385ff;
+  background-color: #3385ff;
+  color: white;
   border-radius: 3px;
+  border-color: #2e77e6;
+  text-align: center;
+  height: 48px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  border: 1px;
 }
 
 .c-button:hover {
+  background-color: #4f95ff;
 }
 
 .c-button:focus {
+  outline: none;
+  border-color: #4f95ff;
+  box-shadow: h-offset v-offset blur spread color;
+  box-shadow: 0 0 0 3px #3385ff4d;
 }
 
 .c-button:active {
+  background-color: #2e77e6;
 }
 
 .c-button--block {
